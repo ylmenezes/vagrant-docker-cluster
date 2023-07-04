@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  manutencao:
+    image: ylmenezes/maintenance:1.0
+    restart: always
+    ports:
+      - 80:80
+    deploy:
+      replicas: 3
